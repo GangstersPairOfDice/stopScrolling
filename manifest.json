@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "stopScrolling",
+  "version": "0.0.1",
+
+  "description": "Disables scrolling on any websites of your choosing!",
+  "homepage_url": "https://github.com/GangstersPairOfDice",
+
+  "icons": {
+    "16": "images/stopScrolling.png",
+    "48": "images/stopScrolling.png",
+    "128": "images/stopScrolling.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "images/stopScrolling.png",
+      "24": "images/stopScrolling.png",
+      "32": "images/stopScrolling.png"
+    },
+    "default_title": "stopScrolling",
+    "default_popup": "popup/popup.html"
+  },
+
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["stopScrolling.js"]
+    }
+  ]
+}
