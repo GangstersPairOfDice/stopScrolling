@@ -19,7 +19,7 @@
       "32": "images/stopScrolling.png"
     },
     "default_title": "stopScrolling",
-    "default_popup": "popup/popup.html"
+    "default_popup": "extensionPopup/extensionPopup.html"
   },
 
   "permissions": ["activeTab"],
